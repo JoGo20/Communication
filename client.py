@@ -94,6 +94,28 @@ def MakeMove():
     ResignMove = {'type': 'resign'}
     
     print(GameInfo.LastOppMove)
+    
+    # IMPORTANT
+    # 
+    # Recieved Move Message Format 
+    # 
+    # {'type' : 'pass'}
+    # OR
+    # {'type': 'resign'}
+    # OR 
+    # {
+    #     'type' : 'place',
+    #     'point': { 
+    #                 'row':x,
+    #                 'column':y
+    #             }
+        
+    # }
+    #
+    # Also the sent message should be the same format
+    
+    
+    
     x = random.randrange(0,20)
     y = random.randrange(0,20)
     
